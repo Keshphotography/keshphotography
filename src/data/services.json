@@ -1,0 +1,19 @@
+{
+  "services": [
+    {
+      "title": "Photography",
+      "blurb": "Portraits, weddings, events and brand work. Clean, considered images that hold up in print and on a feed.",
+      "items": ["Portraits & editorial", "Weddings & ruracio", "Events & corporate"]
+    },
+    {
+      "title": "Cinematography",
+      "blurb": "Films people watch to the end. Wedding films, brand stories, documentary and travel, shot and edited start to finish.",
+      "items": ["Brand & promo films", "Wedding films", "Documentary & travel"]
+    },
+    {
+      "title": "Media Consultation",
+      "blurb": "Helping brands and creators shape their visual story, from what to shoot to how it rolls out across platforms.",
+      "items": ["Content strategy", "Shoot direction", "Social rollout"]
+    }
+  ]
+}

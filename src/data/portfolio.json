@@ -1,0 +1,64 @@
+{
+  "portfolio": [
+    {
+      "03_Portfolio_Title": "Dhows of the Indian Ocean",
+      "category": "Documentaries & Travel",
+      "type": "video",
+      "media_url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+      "thumbnail": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80",
+      "story_location": "Mombasa, Kenya",
+      "story_client": "Personal documentary",
+      "story_notes": "A short history of the dhows along the Kenyan coastline, shot over two days at golden hour."
+    },
+    {
+      "03_Portfolio_Title": "Sophia & Ted",
+      "category": "Cinematography & Reels",
+      "type": "video_vertical",
+      "media_url": "https://www.youtube.com/shorts/tgbNymZ7vqY",
+      "thumbnail": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+      "story_location": "Nairobi, Kenya",
+      "story_client": "Wedding film",
+      "story_notes": "A vertical reel cut for social, capturing the vibe of the whole celebration."
+    },
+    {
+      "03_Portfolio_Title": "The Advocate",
+      "category": "Creative Shoots",
+      "type": "photo",
+      "media_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "story_location": "Studio, Nairobi",
+      "story_client": "Editorial portrait",
+      "story_notes": "A bold studio portrait exploring colour, posture and identity."
+    },
+    {
+      "03_Portfolio_Title": "Energizing Healthcare",
+      "category": "Corporate & Events",
+      "type": "photo",
+      "media_url": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+      "story_location": "Nairobi, Kenya",
+      "story_client": "SEforAll",
+      "story_notes": "Conference coverage across two days, candid and posed, delivered within 48 hours."
+    },
+    {
+      "03_Portfolio_Title": "Mt. Kinangop",
+      "category": "Documentaries & Travel",
+      "type": "photo",
+      "media_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+      "story_location": "Aberdares, Kenya",
+      "story_client": "Personal / travel",
+      "story_notes": "A short story from a cold morning climb, chasing light above the clouds."
+    },
+    {
+      "03_Portfolio_Title": "Kanunga Waterfall",
+      "category": "Cinematography & Reels",
+      "type": "video_vertical",
+      "media_url": "https://www.tiktok.com/@kesh_photography/video/0000000000000000000",
+      "thumbnail": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80",
+      "story_location": "Kiambu, Kenya",
+      "story_client": "Travel reel",
+      "story_notes": "Soul washed by the water. A vertical travel piece for TikTok and Reels."
+    }
+  ]
+}

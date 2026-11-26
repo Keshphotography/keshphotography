@@ -1,0 +1,132 @@
+# ============================================================
+#  KESHPHOTOGRAPHY — Decap CMS configuration
+#  This controls everything you see and edit at /admin.
+#  You do NOT need to touch this file. It is set up for you.
+# ============================================================
+
+backend:
+  name: git-gateway        # uses your Netlify login — no separate account
+  branch: main             # the branch Netlify builds from
+
+# Where uploaded photos are stored
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+# Friendlier editor
+site_url: https://keshphotography.net
+display_url: https://keshphotography.net
+logo_url: /images/logo-visual-thread.svg
+
+collections:
+
+  # -------- SITE SETTINGS (logo, contacts, socials) --------
+  - name: "settings"
+    label: "Site Settings"
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: "site"
+        label: "Brand, Logo & Contacts"
+        file: "src/data/site.json"
+        fields:
+          - { name: brand_name, label: "Brand name", widget: string }
+          - { name: tagline, label: "Tagline", widget: string }
+          - { name: philosophy, label: "Philosophy line", widget: string }
+          - { name: logo, label: "Logo (upload your transparent PNG or SVG here)", widget: image, required: false, hint: "Swap the default Visual Thread mark for your own high-res logo anytime." }
+          - { name: email, label: "Email", widget: string }
+          - { name: phone, label: "Phone", widget: string }
+          - { name: whatsapp, label: "WhatsApp number (digits only, e.g. 254725695845)", widget: string }
+          - { name: instagram, label: "Instagram URL", widget: string }
+          - { name: youtube, label: "YouTube URL", widget: string }
+          - { name: tiktok, label: "TikTok URL", widget: string }
+          - { name: facebook, label: "Facebook URL", widget: string }
+
+  # -------- HERO (Story Lens) --------
+  - name: "hero"
+    label: "01 · Hero (Story Lens)"
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: "hero"
+        label: "Hero section"
+        file: "src/data/hero.json"
+        fields:
+          - { name: "01_Hero_Eyebrow", label: "Small eyebrow text", widget: string }
+          - { name: "01_Hero_Headline", label: "Big headline", widget: string }
+          - { name: "01_Hero_Subtext", label: "Sub text", widget: text }
+          - { name: "01_Hero_Featured_Visual", label: "Front image (main hero photo)", widget: image }
+          - { name: "01_Hero_Layer_Back", label: "Back image (parallax layer behind)", widget: image }
+          - { name: "01_Hero_Coordinates", label: "Viewfinder coordinates (e.g. 35mm · f/1.4 · Nairobi)", widget: string }
+
+  # -------- ABOUT --------
+  - name: "about"
+    label: "02 · About Kesh"
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: "about"
+        label: "About section"
+        file: "src/data/about.json"
+        fields:
+          - { name: "02_About_Eyebrow", label: "Eyebrow", widget: string }
+          - { name: "02_About_Heading", label: "Heading", widget: string }
+          - { name: "02_About_Body", label: "Body text", widget: text }
+          - { name: "02_About_Kesh_Portrait", label: "Your portrait photo", widget: image }
+          - { name: "02_About_Stat1_Number", label: "Stat 1 number", widget: string }
+          - { name: "02_About_Stat1_Label", label: "Stat 1 label", widget: string }
+          - { name: "02_About_Stat2_Number", label: "Stat 2 number", widget: string }
+          - { name: "02_About_Stat2_Label", label: "Stat 2 label", widget: string }
+          - { name: "02_About_Stat3_Number", label: "Stat 3 number", widget: string }
+          - { name: "02_About_Stat3_Label", label: "Stat 3 label", widget: string }
+
+  # -------- SERVICES --------
+  - name: "services"
+    label: "Services"
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: "services"
+        label: "Services (3 cards)"
+        file: "src/data/services.json"
+        fields:
+          - name: services
+            label: "Service cards"
+            widget: list
+            fields:
+              - { name: title, label: "Title", widget: string }
+              - { name: blurb, label: "Short description", widget: text }
+              - { name: items, label: "Bullet points", widget: list, field: { name: item, label: "Item", widget: string } }
+
+  # -------- PORTFOLIO (the big one) --------
+  - name: "portfolio"
+    label: "03 · Portfolio Items"
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: "portfolio"
+        label: "Portfolio grid"
+        file: "src/data/portfolio.json"
+        fields:
+          - name: portfolio
+            label: "Portfolio items (add/remove/reorder freely)"
+            widget: list
+            summary: "{{fields.03_Portfolio_Title}} — {{fields.category}}"
+            fields:
+              - { name: "03_Portfolio_Title", label: "Title", widget: string }
+              - name: category
+                label: "Category (filter it shows under)"
+                widget: select
+                options: ["Documentaries & Travel","Cinematography & Reels","Corporate & Events","Creative Shoots"]
+              - name: type
+                label: "Type of item"
+                widget: select
+                options:
+                  - { label: "Photo", value: "photo" }
+                  - { label: "Video — widescreen (16:9)", value: "video" }
+                  - { label: "Video — vertical reel (9:16)", value: "video_vertical" }
+                hint: "Pick vertical for IG Reels / TikTok / YouTube Shorts."
+              - { name: media_url, label: "Photo URL or Video link (paste YouTube / Instagram / TikTok / Facebook link)", widget: string, hint: "For photos, upload below and copy its link. For video, just paste the share link." }
+              - { name: thumbnail, label: "Thumbnail image (shown in the grid)", widget: image }
+              - { name: story_location, label: "Story — Location", widget: string, required: false }
+              - { name: story_client, label: "Story — Client / brief", widget: string, required: false }
+              - { name: story_notes, label: "Story — Director's notes", widget: text, required: false }

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Visual Thread: continuous-line K that resolves into an aperture/eye. Placeholder SVG; swap your final file in /admin. -->
+  <path d="M38 22 C30 40 30 60 36 82 C40 96 50 104 60 104"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M40 60 C52 52 60 46 70 40"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M40 60 C54 66 66 74 78 86"
+        stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <!-- eye / aperture -->
+  <path d="M62 60 C72 48 92 48 102 60 C92 72 72 72 62 60 Z"
+        stroke="currentColor" stroke-width="3" fill="none"/>
+  <g>
+    <circle cx="82" cy="60" r="9" fill="currentColor"/>
+    <circle cx="82" cy="60" r="4.5" fill="#F5F3EE"/>
+  </g>
+  <!-- gold accent dot -->
+  <circle cx="104" cy="44" r="4" fill="#C89654"/>
+</svg>
